@@ -1,0 +1,10 @@
+[Unit]
+Description=Service personnalisé de test
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/bash /usr/local/bin/custom_service.sh
+
+[Install]
+WantedBy=multi-user.target
